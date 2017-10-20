@@ -22,6 +22,7 @@ class Shop {
       else {
         updateRegularItem(item);
       }
+      updateSellIn(item);
       checkQualityBounds(item);
     }
     return this.items;
@@ -34,7 +35,6 @@ class Shop {
       if (item.quality < 50) {
         item.quality++;
       }
-      updateSellIn(item);
     }
 
     function updateConcertTicket(item) {
@@ -49,16 +49,6 @@ class Shop {
       }
       else {
         item.quality++;
-      }
-      updateSellIn(item);
-    }
-
-    function updateConjuredItem(item) {
-      if (item.sellIn <= 0) {
-        item.quality -= 4;
-      }
-      else {
-        item.quality -= 2;
       }
     }
 

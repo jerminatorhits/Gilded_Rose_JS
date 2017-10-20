@@ -3,7 +3,6 @@ class Item {
     this.name = name;
     this.sellIn = sellIn;
     this.quality = quality;
-    //multiply
   }
 }
 
