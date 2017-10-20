@@ -80,4 +80,10 @@ describe("Gilded Rose", function() {
     expect(items[0].quality).toBe(0);
     expect(items[1].quality).toBe(0);
   });
+
+  it('Conjured items degrade 2x', () => {
+    const gildedRose = new Shop([ new Item("Conjured", 5, 5) ]);
+    const items = gildedRose.updateQuality();
+    expect(items[0].quality).toBe(3);
+  });
 });
