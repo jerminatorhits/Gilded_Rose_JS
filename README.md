@@ -10,7 +10,7 @@ The original problem can be found here: https://github.com/emilybache/GildedRose
 ```
 git clone https://github.com/jerminatorhits/Gilded_Rose_Refactoring_Kata_JS
 ```
-2. Navigate to the folder labeled "test.js". 
+2. Change Directory to Gilded_Rose_Refactoring_Kata_JS
 
 3. If you haven't downloaded jest, you can do so here:
 ```
