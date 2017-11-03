@@ -7,16 +7,16 @@ class Shop {
     for (var i = 0; i < this.items.length; i++) {
       var item = this.items[i];
       var name = item.name;
-      if (name.includes('Sulfuras')) {
+      if (name == 'Sulfuras, Hand of Ragnaros') {
         continue;
       }
-      else if (name.includes('Aged Brie')) {
+      else if (name == 'Aged Brie') {
         updateBrie(item);
       }
-      else if (name.includes('Backstage passes')) {
+      else if (name == 'Backstage passes to a TAFKAL80ETC concert') {
         updateConcertTicket(item);
       } 
-      else if (name.includes('Conjured')) {
+      else if (name == 'Conjured') {
         updateConjuredItem(item);
       }
       else {
