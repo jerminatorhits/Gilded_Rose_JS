@@ -6,6 +6,13 @@ class ItemUpdateRates {
   }
 
   updateItem(item) {
+    /*
+    if (typeof rates === 'undefined') {
+      rates.expired_quality_update_rate = -2;
+      rates.quality_update_rate = -1;
+      rates.sell_in_update_rate = -1;
+    }
+    */
   	if (item.sellIn >= 0) item.quality += this.quality_update_rate;
   	else item.quality += this.expired_quality_update_rate;
   	item.sellIn += this.sell_in_update_rate;

@@ -30,6 +30,7 @@ class BackstagePassesItemUpdateRates extends ItemUpdateRates {
       this.quality_update_rate = 1;
     }
   }
+  
 }
 
 module.exports = new BackstagePassesItemUpdateRates();

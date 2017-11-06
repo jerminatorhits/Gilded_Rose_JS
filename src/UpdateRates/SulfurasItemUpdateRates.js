@@ -8,7 +8,7 @@ class SulfurasItemUpdateRates extends ItemUpdateRates {
     this.sell_in_update_rate = 0;
   }
 
-  updateItem(){
+  updateItem() {
   }
 }
 
